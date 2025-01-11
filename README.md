@@ -17,17 +17,3 @@ Running command:
 1. Check the associated token is existed in my wallet.
 2. Create associated token account within my wallet if not exist.
 3. Invoke the buy or sell function on the IDL of pump.fun program.
-
-# Output
-Here, I would like to show the output of this project.
-
-![image](imgs/wallet.png) <br/>
-This is the image of my wallet (phantom)
-
-
-![image](imgs/token_account.png)<br/>
-This is the image of my account for tokens.
-
-
-![image](imgs/transaction.png)<br/>
-This is the image of transaction details
