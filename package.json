@@ -1,34 +1,15 @@
 {
-  "name": "mtb-bot-ts",
-  "version": "1.0.0",
-  "main": "index.js",
   "scripts": {
-    "start": "node dist/app.js",
-    "dev": "nodemon src/app.ts",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "tsc && node ./built/index.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": "",
   "dependencies": {
-    "@raydium-io/raydium-sdk-v2": "^0.1.92-alpha",
-    "@solana/spl-token": "^0.4.9",
-    "@solana/web3.js": "^1.95.8",
-    "axios": "^1.7.9",
-    "bs58": "^6.0.0",
-    "dotenv": "^16.4.7",
-    "express": "^4.21.1",
-    "mongoose": "^8.8.3",
-    "telegraf": "^4.16.3",
-    "telegram": "^2.26.8"
-  },
-  "devDependencies": {
-    "@types/express": "^5.0.0",
-    "@types/node": "^22.10.1",
-    "nodemon": "^3.1.7",
-    "ts-node": "^10.9.2",
-    "ts-node-dev": "^2.0.0",
-    "typescript": "^5.7.2"
+    "@coral-xyz/anchor": "^0.26.0",
+    "@project-serum/anchor": "^0.26.0",
+    "@solana/spl-token": "^0.1.8",
+    "@solana/web3.js": "^1.60.0",
+    "bn.js": "^5.2.1",
+    "dotenv": "^16.4.5",
+    "source-map-loader": "^5.0.0",
+    "ts-loader": "^9.5.1"
   }
 }
