@@ -1,5 +1,7 @@
 🌟 Solana Token Swap Script
-Welcome to this incredible script that empowers you to execute token swaps on the Solana network in just a second! 🚀✨ Dive into the world of decentralized finance with ease and efficiency!
+
+Welcome to this incredible script that empowers you to execute token swaps on the Solana network in just a second! 🚀
+✨ Dive into the world of decentralized finance with ease and efficiency!
 
 🛠️ Core Solana Technologies:
 
@@ -20,6 +22,9 @@ Make sure to securely add your private key in the .env file. 🔐
 Start the Script:
 
 ```npm start  ```
+
+This script is running on localhost:3000/swapTokens
+
 
 
 Enjoy smooth and swift token swapping on Solana! If you have any questions or need assistance, feel free to reach out. 🌈✨ Happy swapping! 🌟
